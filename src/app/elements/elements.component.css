@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.element-row{
+    background: #eee;
+    margin: 1px auto;
+    color: #333;
+    font-family: "Raleway";
+    padding-left: 0;
+}
+.selected{
+    background:#FE9A01;
+}
+
+.divElementID{
+    padding-left: 20px;
+}
+
+.color-mark{
+    width: 5px;
+    height: 90%;
+    top: 5%;
+    left: -2px;
+    background: #ff0000;
+    border-radius: 15px;
+    float: left;
+    position: absolute;
+}
+
+.col-3{
+    padding-left: 0;
+}

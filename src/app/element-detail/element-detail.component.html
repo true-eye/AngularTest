@@ -1,0 +1,29 @@
+<div *ngIf="element">
+    <div class="container">
+      <div class="row">
+        <table class="table table-bordered table-responsive-md table-striped text-center">
+          <tr>
+            <th class="text-center">Id</th>
+            <th class="text-center">Title</th>
+            <th class="text-center">Color</th>
+          </tr>
+          <tr>
+              <td class="pt-3-half"><input type="text" [(ngModel)]="element.id"/></td>
+              <td class="pt-3-half"><input type="text" [(ngModel)]="element.title"/></td>
+              <td class="pt-3-half"><input type="text" [(ngModel)]="element.color"/></td>
+          </tr>
+        </table>
+      </div>
+      <div class="row">
+        <textarea class="form-control" rows="3" id="text" [(ngModel)]="element.text"></textarea>  
+      </div>
+      <div class="float-right">
+        <div class="btn-group btn-group-justified">
+          <button class="btn btn-success" (click)="onAdd()">Add</button>
+          <button class="btn btn-warning" (click)="onModify()">Modify</button>
+          <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+        </div>
+      </div>
+      
+    </div>    
+</div>

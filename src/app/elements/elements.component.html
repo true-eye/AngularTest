@@ -1,0 +1,11 @@
+<div *ngFor="let element of elements">
+  <div class="row element-row" [class.selected]="element === this.elementService.getSelectedElement()" (click)="onSelect(element)">
+    <div class="col-3">
+      <div class = "color-mark" [style.background-color]='element.color' ></div>
+      <div class = "divElementID">#{{element.id}}</div>
+    </div>
+    <div class="col-8">
+      {{element.title}}:<br/>further detail
+    </div>
+  </div>
+</div>
