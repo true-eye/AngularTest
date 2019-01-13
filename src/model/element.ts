@@ -1,5 +1,5 @@
 export class Element {
-    id: string;
+    id: number;
     title: string;
     color: string;
     text: string;
